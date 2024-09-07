@@ -6,6 +6,7 @@ use App\Http\Controllers\{
 };
 use Illuminate\Support\Facades\Route;
 
+Route::post('/login', [UserController::class, 'store']);
 Route::post('/cadastrar', [UserController::class, 'store']);
 
 Route::prefix('/user')->group(function (){
